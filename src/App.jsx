@@ -13,6 +13,7 @@ import {
 import Login from './components/Login';
 import Signup from './components/Signup';
 import NotFound from './components/NotFound';
+import ChangePass from './components/ChangePass';
 
 function App() {
 
@@ -26,16 +27,12 @@ function App() {
             <Route path='/' element={<Content></Content>}></Route>
             <Route path='/login' element={<Login></Login>}></Route>
             <Route path='/signup' element={<Signup></Signup>}></Route>
-            <Route path='*' element={<NotFound />}></Route>
+            <Route path='*' element={<ChangePass />}></Route>
+
           </Routes>
           <Footer></Footer>
         </div>
       </Router>
-
-
-
-
-
     </>
   )
 }
